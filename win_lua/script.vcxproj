@@ -103,7 +103,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>..\latest\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\lua</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,7 +128,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>..\latest\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\lua</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,7 +153,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>..\latest\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\lua</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -178,7 +178,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>..\latest\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\lua</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -192,17 +192,17 @@
       <Command>copy script.lua $(OutputPath)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>Copy example script and DLL to output location.</Message>
+      <Message>Copy test script to output location.</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="script.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\latest\include\lauxlib.h" />
-    <ClInclude Include="..\latest\include\lua.h" />
-    <ClInclude Include="..\latest\include\luaconf.h" />
-    <ClInclude Include="..\latest\include\lualib.h" />
+    <ClInclude Include="..\lua\lauxlib.h" />
+    <ClInclude Include="..\lua\lua.h" />
+    <ClInclude Include="..\lua\luaconf.h" />
+    <ClInclude Include="..\lua\lualib.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="script.lua" />

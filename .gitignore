@@ -1,0 +1,4 @@
+/win_lua/obj
+/win_lua/bin
+/win_lua/.vs/
+*.user
