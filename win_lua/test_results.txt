@@ -1,0 +1,42 @@
+These results are not unusual as the tests are designed for a non-windows environment.
+Note: heavy.lua uses all memory - grab a tea.
+
+Legend
+	X	test passed
+	?	partial result
+	_	test passed in another category (suspect)
+
+
+		x64 Debug	x64 Release	x64 Opt
+all
+api
+attrib
+big
+bitwise		X		X		X
+bwcoercion
+calls		X		X		X
+closure		X		X		X
+code
+constructs	X		X		X
+coroutine
+cstack		_		X		X
+db		X		_		_
+errors
+events		?		?		?
+files
+gc		?		?		?
+gengc		?		?		?
+goto		X		X		X
+heavy		X		X		X
+literals	X		X		X
+locals		X		_		_
+main
+math		X		X		X
+nextvar		?		?		?
+pm		X		X		X
+sort		X		X		X
+strings		?		?		?
+tpack		X		X		X
+utf8		X		X		X
+vararg		X		X		X
+verybig		X		X		X
