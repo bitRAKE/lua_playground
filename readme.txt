@@ -48,8 +48,8 @@ Build and smoke test
    test bitwise.lua calls.lua
    ```
 
-   The wrapper expands those names against `..\lua\testes\` and invokes the
-   built `script` executable for each file.
+   The wrapper requires at least one test name, expands each name against
+   `..\lua\testes\`, and invokes the built `script` executable for each file.
 
 Notes
 -----
