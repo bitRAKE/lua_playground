@@ -54,9 +54,11 @@ Build and smoke test
 Notes
 -----
 
-- `script.c` changes the working directory to the upstream `lua/testes`
-  directory before executing arguments. This keeps the upstream tests close to
-  their expected runtime layout.
+- `script.c` keeps plain script names relative to the current output directory, so
+  `script script.lua` works as a quick smoke test. When a script argument
+  includes a directory, the launcher changes to that directory before executing
+  the file basename; this keeps upstream Lua tests close to their expected
+  runtime layout.
 - The Lua test suite was originally designed for non-Windows environments, so
   some tests are expected to be partial or configuration-dependent; see
   `win_lua/test_results.txt` for the existing result notes.
